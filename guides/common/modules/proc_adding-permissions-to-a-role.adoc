@@ -10,9 +10,9 @@ To use the CLI instead of the {ProjectWebUI}, see the xref:cli-adding-permission
 . Select the *Resource type* from the drop-down list.
 The _(Miscellaneous)_ group gathers permissions that are not associated with any resource group.
 . Click the permissions you want to select from the *Permission* list.
-. Depending on the *Resource type* selected, you can select or deselect the *Unlimited* checkbox.
-If the *Unlimited* checkbox is selected, the permission is applied on all resources of the selected type.
-When you disable the *Unlimited* checkbox, the *Search* field activates.
+. For certain *Resource type* options, the *Unlimited* checkbox is available.
+If *Unlimited* is selected, the permission is applied on all resources of the selected type.
+If *Unlimited* is unselected, the *Search* field activates.
 In this field you can specify further filtering with use of the {Project} search syntax.
 For more information, see xref:Granular_Permission_Filtering_{context}[].
 . Click *Next*.
