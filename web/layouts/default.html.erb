@@ -5,8 +5,12 @@
     <title>Foreman documentation: <%= @item[:title] %></title>
     <link rel="stylesheet" href="/css/default.css">
     <meta name="generator" content="Nanoc <%= Nanoc::VERSION %>">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/github-fork-ribbon-css/0.2.3/gh-fork-ribbon.min.css" />
   </head>
   <body>
+    <a class="github-fork-ribbon left-top" href="https://docs.theforeman.org/" data-ribbon="Unsupported version" title="Unsupported version">
+      Unsupported version
+    </a>
   <%= render "/nav.html.erb" %>
   <div class="container narrow">
   <%= yield %>
