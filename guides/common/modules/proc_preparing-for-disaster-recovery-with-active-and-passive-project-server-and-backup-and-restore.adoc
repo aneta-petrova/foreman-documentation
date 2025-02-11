@@ -1,0 +1,24 @@
+[id="preparing-for-disaster-recovery-with-active-and-passive-project-server-and-backup-and-restore"]
+= Preparing for disaster recovery with active and passive {ProjectServer} and backup and restore
+
+Create your passive {ProjectServer} as a clone of your active {ProjectServer}.
+Configure periodic backups on the active server, and restore them on your passive server.
+
+.Procedure
+. Clone your active {ProjectServer}.
+See xref:cloning_satellite_server[].
++
+Keep the source server powered on and power off the new cloned server.
+The source server remains your primary active server, while the clone server becomes the secondary passive server.
+
+.Verification
+Perform this test in an isolated staging environment:
+// Does this make sense? We don't want users testing this in production, right?
+
+. Stop the active server to mimic failure.
+// How? foreman-maintain service stop?
+. Start the passive server.
+// How? foreman-maintain service start?
+. Assess the functionality of the test passive {ProjectServer}.
+See xref:Retrieving_the_Status_of_Services_{context}[].
+. Perform these verification checks regularly.

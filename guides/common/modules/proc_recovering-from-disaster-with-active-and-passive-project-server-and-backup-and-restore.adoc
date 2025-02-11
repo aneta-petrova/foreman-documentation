@@ -1,0 +1,13 @@
+[id="recovering-from-disaster-with-active-and-passive-server-and-backup-and-restore"]
+= Recovering from disaster with active and passive server and backup and restore
+
+If your active {ProjectServer} fails, activate your passive secondary server.
+
+.Procedure
+. Verify that the failed active server is powered off and the periodic synchronization of backups to your passive server is disabled.
+// Is foreman-maintain service stop enough?
+. Switch DNS records of the active server with the DNS records of the passive server.
+This ensures that hosts remain connected and you do not need to re-register them.
+. Assess the functionality of your new active {ProjectServer}.
+See xref:Retrieving_the_Status_of_Services_{context}[].
+// What about the old active server? Does it make sense to troubleshoot it and try to bring it back?
