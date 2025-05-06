@@ -1,0 +1,54 @@
+[id="example-playbooks-based-on-modules-from-{project-context}-ansible-collections"]
+= Example playbooks based on modules from {Project} Ansible Collections
+
+The following example playbooks are executed on `localhost`, which can also be {ProjectServer} itself.
+However, because Ansible modules from the {Project} Ansible Collections perform actions by using the {Project} API, you can run your playbooks on any system that can reach the {Project} API.
+
+.Example Ansible playbook: Ensure that domain `new.example.com` exists in {Project}
+====
+The `{ansible-namespace}.domain` module can create, update, and delete domains.
+This example playbook uses `{ansible-namespace}.domain` to ensure that a domain named `new.example.com` exists and is managed by {Project}.
+
+[options="nowrap" subs="+quotes,attributes"]
+----
+- name: Domain management
+  hosts: localhost
+  tasks:
+    - name: Ensure domain new.example.com exists
+      {ansible-namespace}.domain:
+        name: new.example.com
+----
+
+The settings specified in the example playbook include the following:
+
+`name`:: The name of the domain that you want to ensure exists in {Project}.
+
+For more information, see the Ansible module documentation with `ansible-doc {ansible-namespace}.domain`.
+====
+
+//.Example Ansible playbook: <Add example name>
+//====
+//The `{ansible-namespace}.<module_name>` module can <describe based on the `ansible-doc {ansible-namespace}.<module_name>` command>.
+//This example playbook uses `{ansible-namespace}.<module_name>` to ensure that <describe>.
+//
+//[options="nowrap" subs="+quotes,attributes"]
+//----
+//- name: <Playbook name>
+//  hosts: localhost
+//  tasks:
+//    - name: Task name
+//      {ansible-namespace}.<module_name>:
+//----
+//
+//The settings specified in the example playbook include the following:
+//
+//`parameter`:: <explanation>
+//
+//For more information, see the Ansible module documentation with `ansible-doc {ansible-namespace}.<module_name>`.
+//====
+//
+.Additional resources
+* Use the `ansible-doc --list {ansible-namespace}` command to display the {Project} Ansible modules installed on your system.
+ifndef::orcharhino[]
+* See {ansible-galaxy}[{ansible-galaxy-name}] for a complete list of {Project} Ansible modules and other related information.
+endif::[]
