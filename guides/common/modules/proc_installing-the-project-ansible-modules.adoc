@@ -1,12 +1,30 @@
 [id="Installing_the_Project_Ansible_Modules_{context}"]
 = Installing the {Project} Ansible modules
 
-Use this procedure to install the {Project} Ansible modules.
+Before you can start using modules from {Project} Ansible Collections, you must install the package that provides them.
+Install the package on the system where you will be executing your playbooks.
+This system must be able to reach the {Project} API.
+It can be {ProjectServer} itself.
+ifdef::satellite[]
+
+The following procedure installs the package on {ProjectServer}.
+endif::[]
 
 .Procedure
-* Install the package using the following command:
+* Install the `{ansible-collection-package}` package:
 +
 [options="nowrap" subs="+quotes,attributes"]
 ----
 # {project-package-install} {ansible-collection-package}
 ----
+
+.Verification
+* Display the list of Ansible modules that are now available on your system:
++
+[options="nowrap" subs="+quotes,attributes"]
+----
+# ansible-doc --list {ansible-namespace}
+----
+
+.Next steps
+* You can now use the installed Ansible modules to create playbooks.
