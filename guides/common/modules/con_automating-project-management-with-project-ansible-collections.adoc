@@ -1,8 +1,8 @@
-[id="managing-{project-context}-with-ansible"]
-= Managing {Project} with Ansible
+[id="automating-{project-context}-management-with-{project-context}-ansible-collections"]
+= Automating {Project} management with {Project} Ansible Collections
 
-{Project} Ansible Collections is a set of Ansible modules that interact with the {Project} API.
-You can manage and automate many aspects of {Project} with {Project} Ansible collections.
+{Project} Ansible Collections is a set of Ansible modules that interacts with the {Project} API.
+You can use the modules to automate many aspects of {Project} administration.
 
 ifeval::["{context}" == "planning"]
 .Additional resources
