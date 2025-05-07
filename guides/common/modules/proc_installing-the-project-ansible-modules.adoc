@@ -3,7 +3,6 @@
 
 Before you can start using modules from {Project} Ansible Collections, you must install the package that provides them.
 Install the package on the system where you will be executing your playbooks.
-This system must be able to reach the {Project} API.
 It can be {ProjectServer} itself.
 ifdef::satellite[]
 

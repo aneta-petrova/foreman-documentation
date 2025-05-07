@@ -1,8 +1,8 @@
 [id="example-playbooks-based-on-modules-from-{project-context}-ansible-collections"]
 = Example playbooks based on modules from {Project} Ansible Collections
 
-The following example playbooks are executed on `localhost`, which can also be {ProjectServer} itself.
-However, because Ansible modules from the {Project} Ansible Collections perform actions by using the {Project} API, you can run your playbooks on any system that can reach the {Project} API.
+The following example playbooks are executed against `localhost`, which can also be {ProjectServer} itself.
+However, because Ansible modules from the {Project} Ansible Collections perform actions by using the {Project} API, you can execute your playbooks against any system that can reach the {Project} API.
 
 All playbooks based on modules from {Project} Ansible Collections must include parameters detailing how to connect to the {Project} API.
 For more information, see xref:creating-a-playbook-with-modules-from-{project-context}-ansible-collections[].
