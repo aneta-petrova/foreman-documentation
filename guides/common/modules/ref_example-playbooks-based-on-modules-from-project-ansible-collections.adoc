@@ -2,6 +2,7 @@
 = Example playbooks based on modules from {Project} Ansible Collections
 
 All playbooks based on modules from {Project} Ansible Collections must include parameters detailing how to connect to the {Project} API.
+The following examples use Ansible vault and module defaults group to provide these parameters, and they authenticate using a username and password.
 For more information, see xref:creating-a-playbook-with-modules-from-{project-context}-ansible-collections[].
 
 .Example Ansible playbook: Ensure that domain `new.example.com` exists in {Project}
@@ -13,6 +14,13 @@ This example playbook uses `{ansible-namespace}.domain` to ensure that a domain 
 ----
 - name: Domain management
   hosts: localhost
+  vars_files:
+    - _My_Vault.yml_
+  module_defaults:
+    group/{ansible-module-defaults-group}:
+      username: "{{ _My_Username_ }}"
+      password: "{{ _My_Password_ }}"
+      server_url: "{{ _My_Server_URL_ }}"
   tasks:
     - name: Ensure domain new.example.com exists
       {ansible-namespace}.domain:
@@ -21,6 +29,8 @@ This example playbook uses `{ansible-namespace}.domain` to ensure that a domain 
 
 The settings specified in the example playbook include the following:
 
+`vars_files`:: The name of the vault file that stores values for `username`, `password`, and `server_url`.
+`module_defaults`:: The module defaults group that maps `username`, `password`, and `server_url` to the vault file.
 `name`:: The name of the domain that you want to ensure exists in {Project}.
 
 For more information, see the Ansible module documentation with `ansible-doc {ansible-namespace}.domain`.
