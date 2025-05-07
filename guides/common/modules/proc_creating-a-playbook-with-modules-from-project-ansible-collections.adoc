@@ -63,9 +63,9 @@ If you are authenticating with {Project} user credentials:
     - _My_Vault.yml_
   module_defaults:
     group/redhat.satellite.satellite:
-      username: "{{ username }}"
-      password: "{{ password }}"
-      server_url: "{{ server_url }}"
+      username: "{{ _My_Username_ }}"
+      password: "{{ _My_Password_ }}"
+      server_url: "{{ _My_Server_URL_ }}"
   tasks:
 ----
 +
@@ -79,7 +79,7 @@ If you are authenticating with a Kerberos ticket or a Personal Access Token:
     - _My_Vault.yml_
   module_defaults:
     group/redhat.satellite.satellite:
-      server_url: "{{ server_url }}"
+      server_url: "{{ _My_Server_URL_ }}"
       use_gssapi: true
   tasks:
 ----
