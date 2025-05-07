@@ -88,6 +88,20 @@ If you are authenticating with a Kerberos ticket, map the `server_url` parameter
       use_gssapi: true
   tasks:
 ----
++
+If you are authenticating with a {Project} Personal Access Token, map the `username` parameter to the contents of _My_Vault.yml_:
++
+[source,yaml,subs="+quotes,attributes"]
+----
+- name: _My Playbook_
+  hosts: _localhost_
+  vars_files:
+    - _My_Vault.yml_
+  module_defaults:
+    group/{ansible-module-defaults-group}:
+      password: "{{ _My_Password_ }}"
+  tasks:
+----
 .. In the `tasks:` section, define the tasks that you want your playbook to perform.
 For examples, see xref:example-playbooks-based-on-modules-from-{project-context}-ansible-collections[].
 . Validate the playbook syntax:
