@@ -15,7 +15,7 @@ The following examples use Ansible vault to manage sensitive data.
 * You have access to one of the following types of authentication credentials for that user:
 ** Username and password
 ** Kerberos ticket, if your {ProjectServer} is configured to use {FreeIPA} as an external authentication source
-** {Project} Personal Access Token
+** Username and {Project} Personal Access Token
 
 .Procedure
 . Store your sensitive variables in an encrypted file:
