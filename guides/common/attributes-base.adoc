@@ -46,7 +46,6 @@
 :apache-user: apache
 :apache-log-dir: httpd
 :ansible-collection-package: ansible-collection-theforeman-foreman
-:ansible-doc-activation_key: ansible-doc theforeman.foreman.activation_key
 :ansible-galaxy: https://galaxy.ansible.com/theforeman/foreman
 :ansible-docs-url: https://theforeman.github.io/foreman-ansible-modules/develop/index.html
 :ansible-galaxy-name: Ansible Galaxy
