@@ -62,7 +62,7 @@ If you are authenticating with {Project} user credentials:
   vars_files:
     - _My_Vault.yml_
   module_defaults:
-    group/redhat.satellite.satellite:
+    group/{ansible-module-defaults-group}:
       username: "{{ _My_Username_ }}"
       password: "{{ _My_Password_ }}"
       server_url: "{{ _My_Server_URL_ }}"
@@ -78,7 +78,7 @@ If you are authenticating with a Kerberos ticket or a Personal Access Token:
   vars_files:
     - _My_Vault.yml_
   module_defaults:
-    group/redhat.satellite.satellite:
+    group/{ansible-module-defaults-group}:
       server_url: "{{ _My_Server_URL_ }}"
       use_gssapi: true
   tasks:
