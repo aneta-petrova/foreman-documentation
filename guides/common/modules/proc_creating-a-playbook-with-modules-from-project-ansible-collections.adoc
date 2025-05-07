@@ -1,0 +1,102 @@
+[id="creating-a-playbook-with-modules-from-{project-context}-ansible-collections"]
+= Creating a playbook with modules from {Project} Ansible Collections
+
+Ansible modules from the {Project} Ansible Collections must be able to communicate with the {Project} API over HTTPS.
+In your playbooks, include parameters specifying how to authenticate to enable the connection to API.
+
+[IMPORTANT]
+====
+Do not store sensitive credentials, such as username and password, directly in your playbooks or environment variables.
+The following examples use Ansible vault to manage sensitive data.
+====
+
+.Prerequisites
+* A user account in {Project} exists with permissions to perform the action defined in your playbook.
+* You have access to one of the following types of authentication credentials for that user:
+** Username and password
+** Kerberos ticket, if your {ProjectServer} is configured to use {FreeIPA} as an external authentication source
+** {Project} Personal Access Token
+
+.Procedure
+. Store your sensitive variables in an encrypted file:
+.. Create an Ansible vault.
+For example, to create a vault named _My_Vault.yml_:
++
+[subs="+quotes,attributes"]
+----
+$ ansible-vault create _My_Vault.yml_
+----
+.. After the `ansible-vault create` command opens an editor, provide the required parameters in the _key_: _value_ format.
++
+If you want to authenticate with {Project} user credentials:
++
+[source,ini,subs="+quotes,attributes"]
+----
+_My_Server_URL_: _https://{foreman-example-com}_
+_My_Username_: _My_Admin_User_Account_
+_My_Password_: _My_Admin_Password_
+----
++
+If you want to authenticate with a Kerberos ticket or a Personal Access Token:
++
+[source,ini,subs="+quotes,attributes"]
+----
+_My_Server_URL_: _https://{foreman-example-com}_
+----
+.. Save the changes, and close the editor.
+Ansible encrypts the data in the vault.
+. Create a playbook file that references the vault file.
++
+[NOTE]
+====
+To simplify vault file management, the following YAML snippets use module default groups by defining the `module_defaults` parameter.
+With module default groups, any {ansible-namespace} module within the playbook automatically references the vault file, which eliminates the need to pass vault parameters to each module separately.
+====
++
+If you are authenticating with {Project} user credentials:
++
+[source,yaml,subs="+quotes,attributes"]
+----
+- name: _My Playbook_
+  hosts: _localhost_
+  vars_files:
+    - _My_Vault.yml_
+  module_defaults:
+    group/redhat.satellite.satellite:
+      username: "{{ username }}"
+      password: "{{ password }}"
+      server_url: "{{ server_url }}"
+  tasks:
+----
++
+If you are authenticating with a Kerberos ticket or a Personal Access Token:
++
+[source,yaml,subs="+quotes,attributes"]
+----
+- name: _My Playbook_
+  hosts: _localhost_
+  vars_files:
+    - _My_Vault.yml_
+  module_defaults:
+    group/redhat.satellite.satellite:
+      server_url: "{{ server_url }}"
+      use_gssapi: true
+  tasks:
+----
+. Validate the playbook syntax:
++
+[subs="+quotes"]
+----
+$ ansible-playbook --syntax-check --ask-vault-pass ~/_My_Playbook.yml_
+----
++
+Note that this command only validates the syntax and does not protect against a wrong but valid configuration.
+. Run the playbook:
++
+[subs="+quotes"]
+----
+$ ansible-playbook --ask-vault-pass ~/_My_Playbook.yml_
+----
+
+.Additional resources
+* For information about using Ansible vault, see https://docs.ansible.com/ansible/latest/vault_guide/index.html[Protecting sensitive data with Ansible vault] in _Ansible Community Documentation_.

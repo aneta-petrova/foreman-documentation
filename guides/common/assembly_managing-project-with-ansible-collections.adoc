@@ -3,7 +3,7 @@ include::modules/con_automating-project-management-with-project-ansible-collecti
 
 include::modules/proc_installing-the-project-ansible-modules.adoc[leveloffset=+1]
 
-include::modules/con_requirements-for-ansible-modules-connecting-to-the-project-api.adoc[leveloffset=+1]
+include::modules/proc_creating-a-playbook-with-modules-from-project-ansible-collections.adoc[leveloffset=+1]
 
 include::modules/ref_example-playbooks-based-on-modules-from-project-ansible-collections.adoc[leveloffset=+1]
 ifdef::parent-context[:context: {parent-context}]
