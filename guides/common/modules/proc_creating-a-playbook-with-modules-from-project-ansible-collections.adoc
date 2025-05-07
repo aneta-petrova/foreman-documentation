@@ -16,6 +16,10 @@ The following examples use Ansible vault to manage sensitive data.
 ** Username and password
 ** Kerberos ticket, if your {ProjectServer} is configured to use {FreeIPA} as an external authentication source
 ** Username and {Project} Personal Access Token
+* A system that can reach the {Project} API.
+This is the system that you will execute your playbook against.
+It can be {ProjectServer} itself.
+The following examples use `localhost`.
 
 .Procedure
 . Store your sensitive variables in an encrypted file:
