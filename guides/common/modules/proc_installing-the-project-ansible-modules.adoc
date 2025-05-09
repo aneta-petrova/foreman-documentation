@@ -3,7 +3,7 @@
 
 Modules from the {Project} Ansible Collections are provided by the `{ansible-collection-package}` package.
 ifndef::satellite[]
-Before you can start using the modules, you must install the package on the system where you will be executing your playbooks.
+Before you can use the modules, you must install the package on the system where you run your playbooks.
 endif::[]
 ifdef::satellite[]
 On your {ProjectServer}, the package is installed by default.

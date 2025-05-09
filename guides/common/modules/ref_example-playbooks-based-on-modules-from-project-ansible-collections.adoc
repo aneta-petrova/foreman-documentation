@@ -29,8 +29,8 @@ This example playbook uses `{ansible-namespace}.domain` to ensure that a domain 
 
 The settings specified in the example playbook include the following:
 
-`vars_files`:: The name of the vault file that stores values for `username`, `password`, and `server_url`.
-`module_defaults`:: The module defaults group that maps `username`, `password`, and `server_url` to the vault file.
+`vars_files`:: The name of the vault file that stores the variables `_My_Username_`, `_My_Password_`, and `_My_Server_URL_`.
+`module_defaults`:: The module defaults group that maps the variables from the vault file to the `username`, `password`, and `server_url` module parameters.
 `name`:: The name of the domain that you want to ensure exists in {Project}.
 
 For more information, see the Ansible module documentation with `ansible-doc {ansible-namespace}.domain`.
