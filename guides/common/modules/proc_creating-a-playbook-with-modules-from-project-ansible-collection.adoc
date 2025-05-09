@@ -124,7 +124,9 @@ $ ansible-playbook --ask-vault-pass _My_Playbook.yml_
 ====
 The `{ansible-namespace}.domain` module can create, update, and delete domains.
 This simple example playbook uses `{ansible-namespace}.domain` to ensure that a domain named `new.example.com` exists and is managed by {Project}.
+ifdef::katello,orcharhino,satellite[]
 For additional examples, see xref:example-playbooks-based-on-modules-from-{project-context}-ansible-collection[].
+endif::[]
 
 [options="nowrap" subs="+quotes,attributes"]
 ----
