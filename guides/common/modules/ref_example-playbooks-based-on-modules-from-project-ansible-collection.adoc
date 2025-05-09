@@ -96,11 +96,6 @@ The playbook ensures repositories are enabled and a content view that contains t
             product: "Red Hat Enterprise Linux for x86_64"
 ----
 
-The settings specified in the example playbook include the following:
-
-`vars_files`:: The name of the vault file that stores the variables `_My_Username_`, `_My_Password_`, and `_My_Server_URL_`.
-`module_defaults`:: The module defaults group that maps the variables from the vault file to the `username`, `password`, and `server_url` module parameters.
-
 For more information, see the Ansible module documentation with the following commands:
 
 * `ansible-doc {ansible-namespace}.repository_set`
@@ -144,11 +139,6 @@ The playbook synchronizes repositories and publishes the content view that inclu
         organization: "Default Organization"
 ----
 
-The settings specified in the example playbook include the following:
-
-`vars_files`:: The name of the vault file that stores the variables `_My_Username_`, `_My_Password_`, and `_My_Server_URL_`.
-`module_defaults`:: The module defaults group that maps the variables from the vault file to the `username`, `password`, and `server_url` module parameters.
-
 For more information, see the Ansible module documentation with the following commands:
 
 * `ansible-doc {ansible-namespace}.repository_set`
@@ -180,10 +170,6 @@ For more information, see the Ansible module documentation with the following co
 //    - name: Task name
 //      {ansible-namespace}.<module_name>:
 //----
-//
-//The settings specified in the example playbook include the following:
-//
-//`parameter`:: <explanation>
 //
 //For more information, see the Ansible module documentation with the following commands:
 //
