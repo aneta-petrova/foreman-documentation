@@ -5,37 +5,6 @@ All playbooks based on modules from {Project} Ansible Collection must include pa
 The following examples use Ansible vault and module defaults group to provide these parameters, and they authenticate using a username and password.
 For more information, see xref:creating-a-playbook-with-modules-from-{project-context}-ansible-collection[].
 
-.Example Ansible playbook: Ensure that domain `new.example.com` exists in {Project}
-====
-The `{ansible-namespace}.domain` module can create, update, and delete domains.
-This example playbook uses `{ansible-namespace}.domain` to ensure that a domain named `new.example.com` exists and is managed by {Project}.
-
-[options="nowrap" subs="+quotes,attributes"]
-----
-- name: Domain management
-  hosts: localhost
-  vars_files:
-    - _My_Vault.yml_
-  module_defaults:
-    group/{ansible-module-defaults-group}:
-      username: "{{ _My_Username_ }}"
-      password: "{{ _My_Password_ }}"
-      server_url: "{{ _My_Server_URL_ }}"
-  tasks:
-    - name: Ensure domain new.example.com exists
-      {ansible-namespace}.domain:
-        name: new.example.com
-----
-
-The settings specified in the example playbook include the following:
-
-`vars_files`:: The name of the vault file that stores the variables `_My_Username_`, `_My_Password_`, and `_My_Server_URL_`.
-`module_defaults`:: The module defaults group that maps the variables from the vault file to the `username`, `password`, and `server_url` module parameters.
-`name`:: The name of the domain that you want to ensure exists in {Project}.
-
-For more information, see the Ansible module documentation with `ansible-doc {ansible-namespace}.domain`.
-====
-
 .Example Ansible playbook: Enable repositories and create a content view
 ====
 This example playbook uses the following modules:

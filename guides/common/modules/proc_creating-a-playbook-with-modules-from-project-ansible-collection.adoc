@@ -104,7 +104,6 @@ If you are authenticating with a {PAT}, map the `username` and `server_url` para
   tasks:
 ----
 .. In the `tasks:` section, define the tasks that you want your playbook to perform.
-For examples, see xref:example-playbooks-based-on-modules-from-{project-context}-ansible-collection[].
 . Validate the playbook syntax:
 +
 [subs="+quotes"]
@@ -120,6 +119,38 @@ It does not protect against a valid but incorrect configuration.
 ----
 $ ansible-playbook --ask-vault-pass _My_Playbook.yml_
 ----
+
+.Example Ansible playbook: Ensure that domain `new.example.com` exists in {Project}
+====
+The `{ansible-namespace}.domain` module can create, update, and delete domains.
+This simple example playbook uses `{ansible-namespace}.domain` to ensure that a domain named `new.example.com` exists and is managed by {Project}.
+For additional examples, see xref:example-playbooks-based-on-modules-from-{project-context}-ansible-collection[].
+
+[options="nowrap" subs="+quotes,attributes"]
+----
+- name: Domain management
+  hosts: localhost
+  vars_files:
+    - _My_Vault.yml_
+  module_defaults:
+    group/{ansible-module-defaults-group}:
+      username: "{{ _My_Username_ }}"
+      password: "{{ _My_Password_ }}"
+      server_url: "{{ _My_Server_URL_ }}"
+  tasks:
+    - name: Ensure domain new.example.com exists
+      {ansible-namespace}.domain:
+        name: new.example.com
+----
+
+The settings specified in the example playbook include the following:
+
+`vars_files`:: The name of the vault file that stores the variables `_My_Username_`, `_My_Password_`, and `_My_Server_URL_`.
+`module_defaults`:: The module defaults group that maps the variables from the vault file to the `username`, `password`, and `server_url` module parameters.
+`name`:: The name of the domain that you want to ensure exists in {Project}.
+
+For more information, see the Ansible module documentation with `ansible-doc {ansible-namespace}.domain`.
+====
 
 .Additional resources
 * For information about using Ansible vault, see https://docs.ansible.com/ansible/latest/vault_guide/index.html[Protecting sensitive data with Ansible vault] in _Ansible Community Documentation_.
