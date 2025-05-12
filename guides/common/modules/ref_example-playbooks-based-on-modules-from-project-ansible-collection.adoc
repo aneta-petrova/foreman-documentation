@@ -16,7 +16,7 @@ The playbook ensures repositories are enabled and a content view that contains t
 
 [options="nowrap" subs="+quotes,attributes"]
 ----
-- name: Ensure RHEL 10 repositories are enabled and a content view exists
+- name: Ensure RHEL 9 repositories are enabled and a content view exists
   hosts: localhost
   vars_files:
     - _My_Vault.yml_
@@ -43,25 +43,20 @@ The playbook ensures repositories are enabled and a content view that contains t
         - releasever: "9"
         state: enabled
 
-    - name: Sync RHEL repositories
-      {ansible-namespace}.repository_sync:
-        product: "Red Hat Enterprise Linux for x86_64"
-        organization: "Default Organization"
-
-    - name: Ensure a content view for RHEL 10 repositories exists
+    - name: Ensure a content view for RHEL 9 repositories exists
       {ansible-namespace}.content_view:
-        name: "RHEL 10 content view"
+        name: "RHEL 9 content view"
         organization: "Default Organization"
         repositories:
-          - name: "Red Hat Enterprise Linux 10 for x86_64 - BaseOS RPMs 10"
+          - name: "Red Hat Enterprise Linux 9 for x86_64 - BaseOS RPMs 9"
             product: "Red Hat Enterprise Linux for x86_64"
-          - name: "Red Hat Enterprise Linux 10 for x86_64 - AppStream RPMs 10"
+          - name: "Red Hat Enterprise Linux 9 for x86_64 - AppStream RPMs 9"
             product: "Red Hat Enterprise Linux for x86_64"
 ----
 
 For more information, see the Ansible module documentation with the following commands:
 
-* `ansible-doc {ansible-namespace}.repository_set`
+* `ansible-doc {ansible-namespace}.repository_sync`
 * `ansible-doc {ansible-namespace}.content_view`
 ====
 
@@ -76,7 +71,7 @@ The playbook synchronizes repositories and publishes the content view that inclu
 
 [options="nowrap" subs="+quotes,attributes"]
 ----
-- name: Ensure RHEL 10 repositories are synced and content view is published
+- name: Ensure RHEL 9 repositories are synced and content view is published
   hosts: localhost
   vars_files:
     - _My_Vault.yml_
@@ -91,9 +86,9 @@ The playbook synchronizes repositories and publishes the content view that inclu
         product: "Red Hat Enterprise Linux for x86_64"
         organization: "Default Organization"
 
-    - name: Publish RHEL 10 content view
+    - name: Publish RHEL 9 content view
       {ansible-namespace}.content_view_version:
-        content_view: "RHEL 10 content view"
+        content_view: "RHEL 9 content view"
         organization: "Default Organization"
 ----
 
