@@ -42,7 +42,6 @@ The playbook ensures repositories are enabled and a content view that contains t
         repositories:
         - releasever: "9"
         state: enabled
-
     - name: Ensure a content view for RHEL 9 repositories exists
       {ansible-namespace}.content_view:
         name: "RHEL 9 content view"
@@ -85,7 +84,6 @@ The playbook synchronizes repositories and publishes the content view that inclu
       {ansible-namespace}.repository_sync:
         product: "Red Hat Enterprise Linux for x86_64"
         organization: "Default Organization"
-
     - name: Publish RHEL 9 content view
       {ansible-namespace}.content_view_version:
         content_view: "RHEL 9 content view"
