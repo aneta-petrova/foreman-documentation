@@ -5,6 +5,7 @@ All playbooks based on modules from {Project} Ansible Collection must include pa
 The following examples use Ansible vault and module defaults group to provide these parameters, and they authenticate using a username and password.
 For more information, see xref:creating-a-playbook-with-modules-from-{project-context}-ansible-collection[].
 
+[id="example-ansible-playbook-enable-repositories-and-create-a-content-view"]
 .Example Ansible playbook: Enable repositories and create a content view
 ====
 This example playbook uses the following modules:
@@ -13,6 +14,8 @@ This example playbook uses the following modules:
 * `{ansible-namespace}.content_view`
 
 The playbook ensures repositories are enabled and a content view that contains these repositories exists.
+
+Before you run this playbook, ensure that you have uploaded a manifest and can access the Red{nbsp}Hat CDN.
 
 [options="nowrap" subs="+quotes,attributes"]
 ----
@@ -59,6 +62,7 @@ For more information, see the Ansible module documentation with the following co
 * `ansible-doc {ansible-namespace}.content_view`
 ====
 
+[id="example-ansible-playbook-synchronize-repositories-and-publish-a-content-view"]
 .Example Ansible playbook: Synchronize repositories and publish a content view
 ====
 This example playbook uses the following modules:
@@ -67,6 +71,9 @@ This example playbook uses the following modules:
 * `{ansible-namespace}.content_view_version`
 
 The playbook synchronizes repositories and publishes the content view that includes them.
+
+Before you run this playbook, ensure that you have enabled the required repositories and created a content view.
+For an example playbook that ensures this, see xref:example-ansible-playbook-enable-repositories-and-create-a-content-view[].
 
 [options="nowrap" subs="+quotes,attributes"]
 ----
@@ -96,6 +103,7 @@ For more information, see the Ansible module documentation with the following co
 * `ansible-doc {ansible-namespace}.content_view_version`
 ====
 
+//[id="example-ansible-playbook-add-example-name"]
 //.Example Ansible playbook: <Add example name>
 //====
 //This example playbook uses the following modules:
@@ -103,7 +111,9 @@ For more information, see the Ansible module documentation with the following co
 //* `{ansible-namespace}.<module_name>`
 //* `{ansible-namespace}.<module_name>`
 //
-// The playbook ensures that <describe the expected result of the playbook>.
+//The playbook ensures that <describe the expected result of the playbook>.
+//
+//Before you run this playbook, ensure that <describe the prerequisites>.
 //
 //[options="nowrap" subs="+quotes,attributes"]
 //----
