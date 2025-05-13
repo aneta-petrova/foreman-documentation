@@ -92,7 +92,6 @@ The playbook synchronizes repositories and publishes the content view that inclu
 
 For more information, see the Ansible module documentation with the following commands:
 
-* `ansible-doc {ansible-namespace}.repository_set`
 * `ansible-doc {ansible-namespace}.repository_sync`
 * `ansible-doc {ansible-namespace}.content_view_version`
 ====
