@@ -41,3 +41,7 @@ include::topics/Required_Technical_Users.adoc[]
 
 include::topics/Glossary.adoc[]
 endif::[]
+
+ifndef::orcharhino,satellite[]
+include::common/ribbons.adoc[]
+endif::[]

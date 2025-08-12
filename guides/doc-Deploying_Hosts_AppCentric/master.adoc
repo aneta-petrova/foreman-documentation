@@ -71,3 +71,7 @@ include::common/modules/proc_viewing-the-last-deployment-task.adoc[leveloffset=+
 
 include::common/modules/proc_acd-developers.adoc[leveloffset=+1]
 endif::[]
+
+ifndef::orcharhino,satellite[]
+include::common/ribbons.adoc[]
+endif::[]

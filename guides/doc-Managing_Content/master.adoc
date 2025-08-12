@@ -80,3 +80,7 @@ include::common/modules/proc_configuring-server-to-sync-content-using-exports.ad
 
 include::common/modules/proc_configuring-server-to-synchronize-content-over-a-network.adoc[leveloffset=+2]
 endif::[]
+
+ifndef::orcharhino,satellite[]
+include::common/ribbons.adoc[]
+endif::[]
