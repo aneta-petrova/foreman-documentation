@@ -1,5 +1,5 @@
 ---
-name: Custom issue template
+name: Template for 'report issue'
 about: For issues reported via 'Report issue' banner
 title: ''
 labels: direct user feedback
