@@ -3,6 +3,7 @@
 [id="Editing_the_System_Purpose_of_Multiple_Hosts_{context}"]
 = Editing the system purpose of multiple hosts
 
+[role="_abstract"]
 You can edit the system purpose attributes of {RHEL} hosts.
 ifndef::orcharhino[]
 For more information about system purpose, see {RHELDocsBaseURL}8/html/automatically_installing_rhel/proc_configuring-system-purpose-using-the-subscription-manager-command-line-tool_rhel-installer[Configuring System Purpose using the subscription-manager command-line tool] in _Automatically installing RHEL{nbsp}8_.

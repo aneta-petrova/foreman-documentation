@@ -3,6 +3,7 @@
 [id="remote-execution-workflow_{context}"]
 = Remote execution workflow
 
+[role="_abstract"]
 For custom Ansible roles that you create, or roles that you download, you must install the package containing the roles on your {SmartProxyServer}.
 Before you can use Ansible roles, you must import the roles into {Project} from the {SmartProxy} where they are installed.
 

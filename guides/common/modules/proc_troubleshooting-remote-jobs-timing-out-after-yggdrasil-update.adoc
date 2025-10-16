@@ -3,6 +3,7 @@
 [id="troubleshooting-remote-jobs-timing-out-after-yggdrasil-update"]
 = Troubleshooting: Remote jobs timing out after `yggdrasil` update
 
+[role="_abstract"]
 On hosts that have weak dependencies disabled and are configured to use the `yggdrasil` pull client, remote jobs can start failing due to timeouts after the `yggdrasil` package has been updated to version 0.4.z or later.
 
 The pull-based transport configuration relies on the Yggdrasil service and differs based on the version of the `yggdrasil` package that is installed on the host.

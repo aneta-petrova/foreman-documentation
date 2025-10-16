@@ -3,6 +3,7 @@
 [id="invalidating-your-own-jwts"]
 = Invalidating your own JWTs
 
+[role="_abstract"]
 You can invalidate all registration JSON Web Tokens of the current user.
 
 To use the CLI instead of the {ProjectWebUI}, see the xref:cli-invalidating-your-own-jwts[].

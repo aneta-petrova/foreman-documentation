@@ -3,6 +3,7 @@
 [id="converting-a-host-to-rhel_{context}"]
 = Converting a host to {RHEL}
 
+[role="_abstract"]
 You can convert {RHEL} derivative distributions into a supportable {RHEL} on a host while retaining installed applications and configurations.
 {Project} provides *Convert2RHEL* utilities to simplify the conversion process.
 

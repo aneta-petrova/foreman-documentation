@@ -3,6 +3,7 @@
 [id="enabling-rh-cloud-and-insights-client-reports-on-hosts_{context}"]
 = Enabling RH Cloud and {Insights} client reports on hosts
 
+[role="_abstract"]
 You can enable the {Insights} client on hosts and have {Project} upload hosts inventory to the {Insights} service in the {RHCloud}.
 
 ifdef::katello,foreman-el,foreman-deb[]

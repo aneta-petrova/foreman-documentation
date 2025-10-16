@@ -3,6 +3,7 @@
 [id="access_to_information_from_insights_in_{Project}_{context}"]
 = Access to information from {Insights} in {Project}
 
+[role="_abstract"]
 You can access the additional information available for hosts from {Insights} in the following places in the {ProjectWebUI}:
 
 * Navigate to *{Insights}* > *Recommendations* where the vertical ellipsis next to the *Remediate* button provides a *View in {Insights}* link to the general recommendations page.

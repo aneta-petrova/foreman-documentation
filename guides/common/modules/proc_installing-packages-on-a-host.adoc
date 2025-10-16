@@ -3,6 +3,7 @@
 [id="Installing_Packages_on_a_Host_{context}"]
 = Installing packages on a host
 
+[role="_abstract"]
 Use this procedure to review and install packages on a host using the {ProjectWebUI}.
 The list of packages available for installation depends on the content view environments assigned to the host.
 

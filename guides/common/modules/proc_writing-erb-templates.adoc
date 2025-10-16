@@ -3,6 +3,7 @@
 [id="Writing_ERB_Templates_{context}"]
 = Writing ERB templates
 
+[role="_abstract"]
 The following tags are the most important and commonly used in ERB templates:
 
 .<%  %>

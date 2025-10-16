@@ -3,6 +3,7 @@
 [id="Template_Macros_{context}"]
 = Template macros
 
+[role="_abstract"]
 If you want to write custom templates, you can use some of the following macros.
 Depending on the template type, some of the following macros have different requirements.
 

@@ -3,6 +3,7 @@
 [id="Example_Template_Snippets_{context}"]
 = Example template snippets
 
+[role="_abstract"]
 .Checking if a host has Puppet and Puppetlabs enabled
 The following example checks if the host has the Puppet and Puppetlabs repositories enabled:
 

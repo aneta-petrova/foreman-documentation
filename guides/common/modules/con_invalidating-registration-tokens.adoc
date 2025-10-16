@@ -3,6 +3,7 @@
 [id="invalidating-registration-tokens"]
 = Invalidating registration tokens
 
+[role="_abstract"]
 When you generate a registration command in global host registration, {Project} also generates a unique JSON Web Token (JWT) that is used to authorize the registration call from a host to {ProjectServer}.
 This JWT is bound to the user that generated the registration command.
 

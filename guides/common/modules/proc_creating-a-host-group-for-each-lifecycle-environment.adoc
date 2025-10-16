@@ -3,6 +3,7 @@
 [id="Creating_a_Host_Group_for_each_Lifecycle_Environment_{context}"]
 = Creating a host group for each lifecycle environment
 
+[role="_abstract"]
 Use this procedure to create a host group for the Library lifecycle environment and add nested host groups for other lifecycle environments.
 
 .Procedure

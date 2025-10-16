@@ -3,6 +3,7 @@
 [id="host-global-status-overview_{context}"]
 = Host global status overview
 
+[role="_abstract"]
 The global status represents the overall status of a particular host.
 The status can have one of three possible values: *OK*, *Warning*, or *Error*.
 You can find global status on the Hosts Overview page.

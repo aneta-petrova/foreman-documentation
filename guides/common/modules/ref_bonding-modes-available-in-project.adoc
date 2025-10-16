@@ -3,6 +3,7 @@
 [id="bonding-modes-available_{context}"]
 = Bonding modes available in {Project}
 
+[role="_abstract"]
 [options="header"]
 |====
 |Bonding Mode |Description

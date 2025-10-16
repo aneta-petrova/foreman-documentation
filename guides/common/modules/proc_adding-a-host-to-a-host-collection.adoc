@@ -3,6 +3,7 @@
 [id="adding-a-host-to-a-host-collection_{context}"]
 = Adding a host to a host collection
 
+[role="_abstract"]
 You can add a host to a host collection in the {ProjectWebUI}.
 
 .Prerequisites

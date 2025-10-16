@@ -3,6 +3,7 @@
 [id="configuring_synchronization_of_insights_recommendations_for_hosts_{context}"]
 = Configuring synchronization of {Insights} recommendations for hosts
 
+[role="_abstract"]
 You can enable automatic synchronization of the recommendations from {RHCloud} that occurs daily by default.
 If you leave the setting disabled, you can synchronize the recommendations manually.
 

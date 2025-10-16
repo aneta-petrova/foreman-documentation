@@ -3,6 +3,7 @@
 [id="Importing_Report_Templates_{context}"]
 = Importing report templates
 
+[role="_abstract"]
 You can import a report template into the body of a new template that you want to create.
 Note that using the {ProjectWebUI}, you can only import templates individually.
 For bulk actions, use the {Project} API.

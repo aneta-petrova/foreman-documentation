@@ -3,6 +3,7 @@
 [id="global-parameters-for-registration_{context}"]
 = Global parameters for registration
 
+[role="_abstract"]
 You can configure the following global parameters by navigating to *Configure* > *Global Parameters*:
 
 * The `host_registration_insights` parameter is used in the `insights` snippet.

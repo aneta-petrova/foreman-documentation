@@ -3,6 +3,7 @@
 [id="obfuscating-hostnames-and-ip-addresses"]
 = Obfuscating hostnames and IP addresses
 
+[role="_abstract"]
 You can use {ProjectName} to obfuscate hostnames and IP addresses when uploading host data to {Insights}. 
 Obfuscation ensures that sensitive identifying information is not exposed. 
 When obfuscation settings are enabled, {Project} obfuscates hostnames and IP addresses. 

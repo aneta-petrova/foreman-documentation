@@ -3,6 +3,7 @@
 [id="Template_Writing_Reference_{context}"]
 = Template writing reference
 
+[role="_abstract"]
 Embedded Ruby (ERB) is a tool for generating text files based on templates that combine plain text with Ruby code.
 {ProjectName} uses ERB syntax in the following cases:
 

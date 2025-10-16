@@ -3,6 +3,7 @@
 [id="Generating_a_List_of_Installed_Packages_{context}"]
 = Generating a list of installed packages
 
+[role="_abstract"]
 Use this procedure to generate a list of installed packages in *Report Templates*.
 
 .Procedure

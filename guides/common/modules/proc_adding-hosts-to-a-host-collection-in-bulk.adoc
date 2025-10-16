@@ -3,6 +3,7 @@
 [id="adding-hosts-to-a-host-collection-in-bulk_{context}"]
 = Adding hosts to a host collection in bulk
 
+[role="_abstract"]
 You can add multiple hosts to a host collection.
 
 .Prerequisites

@@ -3,6 +3,7 @@
 [id="Assigning_a_Host_to_a_Specific_Location_{context}"]
 = Assigning a host to a specific location
 
+[role="_abstract"]
 Use this procedure to assign a host to a specific location.
 For general information about locations and how to configure them,
 ifdef::satellite[]

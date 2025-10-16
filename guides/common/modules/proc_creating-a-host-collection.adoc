@@ -3,6 +3,7 @@
 [id="Creating_a_Host_Collection_{context}"]
 = Creating a host collection
 
+[role="_abstract"]
 The following procedure shows how to create host collections.
 
 .Procedure

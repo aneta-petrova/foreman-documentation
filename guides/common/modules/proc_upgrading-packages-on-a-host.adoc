@@ -3,6 +3,7 @@
 [id="upgrading-packages-on-a-host_{context}"]
 = Upgrading packages on a host
 
+[role="_abstract"]
 You can upgrade packages on a host in bulk in the {ProjectWebUI}.
 
 .Procedure

@@ -3,6 +3,7 @@
 [id="importing-an-ansible-playbook-by-name_{context}"]
 = Importing an Ansible Playbook by name
 
+[role="_abstract"]
 You can import Ansible Playbooks by name to {Project} from collections installed on {SmartProxy}.
 {Project} creates a job template from the imported playbook and places the template in the `Ansible Playbook - Imported` job category.
 

@@ -3,6 +3,7 @@
 [id="Assigning_a_Host_to_a_Specific_Organization_{context}"]
 = Assigning a host to a specific organization
 
+[role="_abstract"]
 Use this procedure to assign a host to a specific organization.
 For general information about organizations and how to configure them,
 ifdef::satellite[]

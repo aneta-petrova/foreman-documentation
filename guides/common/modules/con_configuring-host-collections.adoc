@@ -3,4 +3,5 @@
 [id="Configuring_Host_Collections_{context}"]
 = Configuring host collections
 
+[role="_abstract"]
 With {Project}, you can use host collections to create groups of content hosts.

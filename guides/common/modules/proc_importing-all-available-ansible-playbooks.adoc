@@ -3,6 +3,7 @@
 [id="importing-all-available-ansible-playbooks_{context}"]
 = Importing all available Ansible Playbooks
 
+[role="_abstract"]
 You can import all the available Ansible Playbooks to {Project} from collections installed on {SmartProxy}.
 {Project} creates job templates from the imported playbooks and places the templates in the `Ansible Playbook - Imported` job category.
 

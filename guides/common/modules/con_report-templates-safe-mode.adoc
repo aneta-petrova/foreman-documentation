@@ -3,6 +3,7 @@
 [id="Report_Template_Safe_Mode_{context}"]
 = Report template safe mode
 
+[role="_abstract"]
 When you create report templates in {Project}, safe mode is enabled by default.
 Safe mode limits the macros and variables that you can use in the report template.
 Safe mode prevents rendering problems and enforces best practices in report templates.

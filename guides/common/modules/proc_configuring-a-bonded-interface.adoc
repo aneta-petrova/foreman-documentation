@@ -3,6 +3,7 @@
 [id="configuring-a-bonded-interface"]
 = Configuring a bonded interface
 
+[role="_abstract"]
 You can combine multiple physical interfaces together by configuring a bonded interface for the host.
 
 [NOTE]

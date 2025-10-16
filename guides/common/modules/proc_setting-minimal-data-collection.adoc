@@ -3,6 +3,7 @@
 [id="setting-minimal-data-collection"]
 = Setting minimal data collection 
 
+[role="_abstract"]
 You can configure {Project} to use minimal reporting if you want to limit the data sent to Red{nbsp}Hat.
 You can use minimal reporting to limit the amount of system data sent to the Subscriptions service, which remains active.
 Other {Insights} services are disabled because they require installed package data, which minimal reports do not include.

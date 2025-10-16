@@ -3,6 +3,7 @@
 [id="Troubleshooting_ERB_Templates_{context}"]
 = Troubleshooting ERB templates
 
+[role="_abstract"]
 The {ProjectWebUI} provides two ways to verify the template rendering for a specific host:
 
 * *Directly in the template editor* – when editing a template (under *Hosts* > *Templates* > *Partition tables*, *Hosts* > *Templates* > *Provisioning Templates*, or *Hosts* > *Templates* > *Job templates*), on the *Template* tab click *Preview* and select a host from the list.

@@ -3,6 +3,7 @@
 [id="host-substatus-overview_{context}"]
 = Host sub-status overview
 
+[role="_abstract"]
 A sub-status monitors only a part of a host's capabilities.
 
 To view the sub-statuses of a host, in the {ProjectWebUI}, navigate to *Hosts* > *All Hosts* and click on the host whose full status you want to inspect.

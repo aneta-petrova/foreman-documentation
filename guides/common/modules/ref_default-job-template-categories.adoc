@@ -3,6 +3,7 @@
 [id="default-job-template-categories_{context}"]
 = Default job template categories
 
+[role="_abstract"]
 [cols="30%,70%",options="header"]
 |====
 |Job template category |Description

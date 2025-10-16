@@ -3,6 +3,7 @@
 [id="Parsing_Arrays_{context}"]
 = Parsing arrays
 
+[role="_abstract"]
 While writing or modifying templates, you might encounter variables that return arrays.
 For example, host variables related to network interfaces, such as `@host.interfaces` or `@host.bond_interfaces`, return interface data grouped in an array.
 To extract a parameter value of a specific interface, use Ruby methods to parse the array.

@@ -3,6 +3,7 @@
 [id="Exporting_Report_Templates_{context}"]
 = Exporting report templates
 
+[role="_abstract"]
 You can export report templates that you create in {Project}.
 
 .Procedure

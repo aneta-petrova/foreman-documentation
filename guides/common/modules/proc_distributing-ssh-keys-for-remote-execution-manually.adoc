@@ -3,6 +3,7 @@
 [id="distributing-ssh-keys-for-remote-execution-manually_{context}"]
 = Distributing SSH keys for remote execution manually
 
+[role="_abstract"]
 To distribute SSH keys manually, complete the following steps:
 
 .Procedure
