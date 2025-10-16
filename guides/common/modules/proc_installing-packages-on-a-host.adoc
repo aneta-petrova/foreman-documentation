@@ -15,6 +15,3 @@ The list of packages available for installation depends on the content view envi
 . In the *Install packages* window, select the package or packages that you want to install on the host.
 . Click *Install*.
 The {ProjectWebUI} shows a notification for the remote execution job.
-
-:PackageAction: install
-include::snip_managing-packages-api.adoc[]

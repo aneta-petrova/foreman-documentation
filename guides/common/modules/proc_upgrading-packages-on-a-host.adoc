@@ -15,6 +15,3 @@ You can upgrade packages on a host in bulk in the {ProjectWebUI}.
 . Select the packages you want to upgrade.
 . Click *Upgrade*.
 The {ProjectWebUI} shows a notification for the remote execution job.
-
-:PackageAction: update
-include::snip_managing-packages-api.adoc[]
