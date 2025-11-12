@@ -1,7 +1,7 @@
 :_mod-docs-content-type: CONCEPT
 
 [id="remote-execution-workflow_{context}"]
-= Remote execution workflow
+= Understanding remote execution workflow
 
 [role="_abstract"]
 When you run a remote job on hosts, for every host, {Project} performs a series of actions to find a remote execution {SmartProxy} to use.
