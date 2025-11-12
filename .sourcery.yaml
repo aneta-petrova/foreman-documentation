@@ -1,0 +1,7 @@
+# .sourcery.yaml
+
+review_rules:
+  - path_patterns: 'guides/common/modules/*.adoc'
+    instructions:
+      - Avoid passive voice in verbs.
+      - Ensure all headings are in sentence case.
