@@ -3,10 +3,10 @@
 [id="Overview-of-Hosts-in-{Project}_{context}"]
 = Overview of hosts in {Project}
 
-A host is any Linux client that {ProjectName} manages.
-Hosts can be physical or virtual.
+A host is any Linux client managed by {ProjectName}.
+Hosts can be configured as physical or virtual.
 
-You can deploy virtual hosts on any platform supported by {ProjectName},
+Virtual hosts can be deployed on any platform supported by {ProjectName},
 ifndef::satellite,orcharhino[]
 such as Amazon EC2, Google Compute Engine, KVM, libvirt, Microsoft Azure, OpenStack, Proxmox, Rackspace Cloud Services, or VMware vSphere.
 endif::[]
@@ -17,9 +17,9 @@ ifdef::orcharhino[]
 such as Amazon EC2, Google Compute Engine, libvirt, Microsoft Azure, Proxmox, and VMware vSphere.
 endif::[]
 
-With {Project}, you can manage hosts at scale, including monitoring, provisioning, remote execution,
+In {Project}, hosts can be managed at scale, including monitoring, provisioning, remote execution,
 ifdef::katello,orcharhino,satellite[]
 subscription management, content management,
 endif::[]
 and configuration management.
-You can also group hosts by using features such as host groups and host collections.
+Hosts can also be grouped by using features such as host groups and host collections.
