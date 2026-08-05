@@ -12,6 +12,12 @@ On {Project}, you can synchronize your Ansible Collections from any Ansible Gala
 endif::[]
 Ansible Collections will appear on {Project} as a new repository type in the {ProjectWebUI} menu under *Content* after the sync.
 
+* `/var/lib/foreman-proxy/ansible/roles/`
+
+[id="enabling-the-ansible-plugin"]
+
+{ansible-namespace}.convert2rhel
+
 .Procedure
 . In the {ProjectWebUI}, navigate to *Content* > *Products*.
 . Select the required product name.
