@@ -26,6 +26,7 @@ endif::[]
 
 {Project} focuses on the following use cases:
 
+ifndef::containerized[]
 Provisioning::
 Deploy consistently configured hosts on bare metal, virtual machines, and cloud instances from a unified interface.
 +
@@ -38,6 +39,7 @@ For example, you can define templates, partition layouts, and available software
 endif::[]
 +
 This approach helps reduce deployment time, standardize the provisioning process, and support scaling of your infrastructure.
+endif::[]
 
 ifdef::katello,orcharhino,satellite[]
 Patch management and content distribution::
@@ -56,6 +58,7 @@ For example, you can schedule maintenance windows, test updates in staging envir
 This approach provides enhanced control over what software runs in your environment and reduces the manual effort required to keep hosts up to date.
 endif::[]
 
+ifndef::containerized[]
 Security management::
 Reduce the effort required to secure hosts at scale.
 +
@@ -63,6 +66,7 @@ Reduce the effort required to secure hosts at scale.
 For example, you can integrate {Project} with security scanning tools, track compliance against security baselines, and set up procedures to help ensure hosts meet regulatory requirements.
 +
 This capability enables centralized security oversight, supports incident response, and helps reduce the attack surface of your hosts.
+endif::[]
 
 Knowledge and analytics::
 Identify potential issues and gain a comprehensive view of your infrastructure.
