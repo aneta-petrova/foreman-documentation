@@ -1,8 +1,8 @@
 <title>Integrate</title>
 <productname>Red Hat Satellite</productname>
 <productnumber>{ProjectVersion}</productnumber>
-<subtitle>Connect to external systems, platforms, or services</subtitle>
-<abstract><para>Authentication integration, cloud provider integration, external monitoring, cross-product workflows, third-party connectors</para></abstract>
+<subtitle>Make {Project} work with other products, cloud services, or enterprise systems.</subtitle>
+<abstract><para>Authentication integration, cloud provider integration, external monitoring, cross-product workflows, third-party connectors.</para></abstract>
 <authorgroup id="Author_Group">
         <author>
                 <firstname>Red Hat Satellite</firstname>
