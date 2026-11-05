@@ -11,5 +11,3 @@ include::maps/evaluate-satellite-security-capabilities.adoc[leveloffset=+1]
 :!planning:
 
 include::maps/administration-tools-overview.adoc[leveloffset=+1]
-
-include::maps/understand-configuration-management-with-ansible.adoc[leveloffset=+1]
